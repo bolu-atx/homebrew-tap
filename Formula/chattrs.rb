@@ -1,19 +1,19 @@
 class Chattrs < Formula
   desc "Distributed client/server messaging for cross-agent coordination"
   homepage "https://github.com/bolu-atx/chattrs"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/bolu-atx/chattrs/releases/download/v0.4.0/chattrs-aarch64-apple-darwin.tar.xz"
-    sha256 "941f063fff463a080434d02094567476c1628860cd39dc2a3667f0d13fe04e4d"
+    url "https://github.com/bolu-atx/chattrs/releases/download/v0.5.0/chattrs-aarch64-apple-darwin.tar.xz"
+    sha256 "34e48c2ea2fb9aafbb07075890ca3a4cdf034e19e39aab6e514766bca0f73608"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bolu-atx/chattrs/releases/download/v0.4.0/chattrs-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d5007752428cd1fd8776befd83ff1225bb0c292fe6361a9144766e093e567b3f"
+      url "https://github.com/bolu-atx/chattrs/releases/download/v0.5.0/chattrs-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "ad0f412242c7bf19126aa0e1a223e143a32d6d6d1ecb05704868045e69fc3b75"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bolu-atx/chattrs/releases/download/v0.4.0/chattrs-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7a7d664d043502a2e1ebfd7d0b868f13bdfb3d610a5679cf5033f4e00074bf35"
+      url "https://github.com/bolu-atx/chattrs/releases/download/v0.5.0/chattrs-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a65690b4ea3283ebbf71908cfc7623250175ba76837d211242279885d9245ca6"
     end
   end
   license "MIT"
